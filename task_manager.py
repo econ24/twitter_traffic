@@ -37,7 +37,10 @@ class TaskManager(threading.Thread):
         print '<manager> Initializing cache'
         self.__cache.refreshCache(self.__DB)
         
-        while not self.__shutDown and self.__taskEvent.wait(60):
+        while self.__taskEvent.wait(60):
+            if self.__shutDown:
+                break
+            
             self.__working = True
             print '<manager> Querying Twitter...'
             rawTweets = self.__crawlTwitter()
