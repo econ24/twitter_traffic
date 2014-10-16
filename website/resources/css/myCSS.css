@@ -1,0 +1,177 @@
+html {
+       overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #fafafa;
+	color: #125;
+	z-index: 0;
+	font-family: "Georgia", "Times New Roman", "Serif";
+}
+
+#header {
+	height: 50px;
+	width: 100%;
+	min-width: 750px;
+	background: #669088;
+	color: #661508;
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Georgia", "Times New Roman", "Serif";
+	font-weight: bold;
+}
+
+.firstLetter {
+	font-size: 50px;
+}
+
+#footer {
+	height: 20px;
+	width: 1340px;
+	margin: auto;
+	background: #ec4;
+	line-height: 20px;
+	text-align: center;
+	position: fixed;
+	z-index: 6;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#navBarBack {
+	height: 20px;
+	width: 100%;
+	min-width: 750px;
+	margin: 0 auto 0 auto;
+	background: #ec4;
+}
+
+#navBarHolder {
+	height: 20px;
+	width: 750px;
+	margin: 0 auto;
+	background: #ca2;
+	position: relative; 
+}
+
+/* navBar */
+
+#navBar {
+	height: 20px;
+	width: 750px;
+	margin: 0 auto;
+	background: #ec4;
+	font-size: 16px;
+}
+
+#navBar a {
+	line-height:20px;
+	display: block;
+	float: left;
+	width: 150px;
+	text-decoration: none;
+	background-color: #ec4;
+	color: #669088;
+	padding-left: 10px;
+}
+
+#navBar a:hover {
+	background-color: #ca2;
+	color: #661508;
+}
+
+/* end navBar */
+
+/* dropDown */
+
+#dropDown {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background: #ca2;
+	z-index: 5;
+	font-size: 16px;
+}
+
+#dropDown a {
+	line-height:20px;
+	text-decoration:none;
+	background-color:#ec4;
+	padding-left:10px;
+	width:150px;
+	display:block;
+	color:#669088;
+}
+
+#dropDown a:hover {
+	background-color: #ca2;
+	color: #661508;
+}
+
+/* end dropDown */
+
+#contentDiv {
+	position: relative;
+}
+
+#mapDiv {
+	border: 5px solid #125;
+	height: 750px;
+	width: 1330px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	position: absolute;
+	margin: 0 auto 45px auto;
+}
+
+#alertDiv {
+	border: 5px solid #125;
+	width: 740px;
+	left: 0;
+	right: 0;
+	background: #ddf;
+	z-index: 1;
+	position: absolute;
+	margin: 0 auto 45px auto;
+}
+
+.alertDiv {
+	margin: 0px 20px 0px 20px;
+	padding: 5px;
+	border-bottom: 3px solid #125;
+	position: relative;
+}
+
+.alertDivBottom {
+	border: none;
+}
+
+.alertHeader {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #125;
+	width: 50%;
+}
+
+.alertBody1, .alertBody2 {
+	font-size: 18px;
+	margin: 0;
+	padding: 5px 0 0 15px;
+	border: none;
+}
+
+.floater {
+	height: 45px;
+	background: rgba(160, 60, 20, 1);
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
